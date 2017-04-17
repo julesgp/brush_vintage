@@ -360,25 +360,38 @@ img.cameraIcon {
 .photography, .development, .branding {
   padding: 50px 20px 0 20px; }
 
+.portfolio {
+  padding-bottom: 72px; }
+
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   visibility: hidden;
   color: white;
   text-align: center; }
   .overlay h5 {
     font-family: "Montserrat", sans-serif;
     font-weight: lighter;
-    margin-bottom: 3px; }
+    margin-bottom: 3px;
+    font-size: 11px; }
   .overlay p {
     margin: 0;
     font-family: "Droid Serif", serif;
     font-size: 9px;
     font-weight: lighter; }
+
+.searchServices {
+  margin-top: 30%;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  font-weight: lighter;
+  padding: 15px;
+  text-align: center; }
 
 .portfolioContainer {
   display: -ms-flexbox;
@@ -430,3 +443,157 @@ img.cameraIcon {
     height: 100%; }
   .deerTwo:hover .overlay, .deerThree:hover .overlay, .mooseOne:hover .overlay {
     visibility: visible; }
+
+.results {
+  height: 265px;
+  background-image: url("../src/assets/mountains_hero.jpeg");
+  background-position: 10% 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.resultsContainer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  width: 61%;
+  margin: 0 auto;
+  color: white;
+  text-align: center; }
+  .resultsContainer h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+    margin: 0; }
+  .resultsContainer p {
+    font-family: "Playfair Display", serif;
+    font-size: 15px;
+    font-weight: lighter; }
+  .resultsContainer hr {
+    width: 30px; }
+
+.projects, .clients, .hours, .cup {
+  width: 25%; }
+
+.colorOverlay {
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(18, 8, 0, 0.6);
+  -ms-flex-align: center;
+      align-items: center; }
+
+.news {
+  padding-top: 60px;
+  padding-bottom: 70px; }
+
+.newsContainer {
+  width: 61%;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.colOne {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 48%; }
+  .colOne img {
+    width: 100%;
+    height: 250px; }
+  .colOne h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 0;
+    letter-spacing: 1px; }
+  .colOne p {
+    font-family: "Droid Serif", serif;
+    color: #959595;
+    font-size: 9px;
+    margin: 0;
+    line-height: 18px; }
+
+.dateMain {
+  margin: 10px 0 !important; }
+
+.colTwo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 48%; }
+
+.row__img {
+  height: 120px;
+  width: 180px; }
+
+.rowOne, .rowTwo, .rowThree {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  width: 100%; }
+  .rowOne h4, .rowTwo h4, .rowThree h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: 1px;
+    line-height: 18px; }
+  .rowOne p, .rowTwo p, .rowThree p {
+    font-family: "Droid Serif", serif;
+    color: #959595;
+    font-size: 9px;
+    margin: 0;
+    line-height: 18px; }
+
+.rowContent {
+  padding-left: 15px; }
+
+.date {
+  margin: 5px 0 !important; }
+
+.newsletterContainer {
+  width: 61%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  margin: 0 auto;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.newsletterInfo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 50%; }
+  .newsletterInfo h3 {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    letter-spacing: 3px;
+    font-size: 16px; }
+  .newsletterInfo p {
+    font-family: "Droid Serif", serif;
+    font-size: 9.5px;
+    color: #959595;
+    margin-top: 10px; }
+
+.newsletterInput {
+  width: 50%; }
