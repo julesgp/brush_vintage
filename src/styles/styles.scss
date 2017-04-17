@@ -1,8 +1,341 @@
+@import "partials/normalize";
+
+@mixin flex($direction){
+	display: flex;
+	flex-direction:$direction;
+}
+
 // VARIABLES 
 
 /* Fonts */
 $Montserrat: 'Montserrat', sans-serif;
-$DroidSerif: 'Droid Serif', serif;
+$Droid: 'Droid Serif', serif;
 $Playfair: 'Playfair Display', serif;
+$pageGray: rgba(208, 208, 208, 0.30);
+
+// H E A D E R 
+
+header{
+	background-image: url('../src/assets/header_slider.jpeg');
+	background-size: cover;
+	background-position:center;
+	background-repeat: no-repeat;
+	height:110vh;
+	color:white;
+	filter: brightness(0.85);
+}
+
+.navegation{
+	@include flex(row);
+}
+
+.logoTop{
+	width:50%;
+	margin-left:20px;
+	img{
+		height:40px;
+		width:70px;
+	}
+}
+
+.navbar{
+	width:50%;
+}
+
+.navbar__items{
+	list-style: none;
+	float:right;
+	@include flex(row);
+	justify-content:center;
+	align-items:center;
+	a{
+		text-decoration: none;
+		color:white;
+		font-family: $Montserrat;
+		font-size:10px;
+	}
+	li{
+		display: flex;
+		justify-content:center;
+		align-items:center;
+		margin-right:15px;
+	}
+}
+
+.headerContent{
+	@include flex(column);
+	align-items:center;
+	font-family:$Droid;
+	font-size:12px;
+	font-weight:lighter;
+	margin-top: 70px;
+	p{
+		margin:0;
+	}
+}
+
+.dot{
+	font-size:3px;
+	color:white;
+}
+
+.searchHeader, .barsHeader{
+	margin-left:15px;
+}
+
+img.logoMoose{
+	height:150px;
+	width:130px;
+}
+
+.brushMain{
+	height:130px;
+	width:470px;
+}
+
+.lineHeader{
+	width:45px;
+	border-bottom:5px solid white;
+	margin-top:0;
+	margin-bottom:20px;
+}
+
+.purchaseHeader{
+	font-family: $Montserrat;
+	color:white;
+	border:2px solid white;
+	background-color: transparent;
+	padding:13px 18px;
+	font-size: 9px;
+	margin-top:20px;
+}
+
+//S U B H E A D E R -general
+.sectionHeader{
+	@include flex(column);
+	justify-content:center;
+	align-items:center;
+	margin-bottom:30px;
+	h3{
+		margin:0;
+		font-family: $Montserrat;
+		font-weight: lighter;
+		letter-spacing: 2px;
+		font-size:15px;
+	}
+	p{
+		font-family: $Droid;
+		color: rgb(149, 149, 149);
+		font-size: 11px;
+	}
+}
+
+.sectionHeaderLine{
+	@include flex(row);
+	align-items:center;
+	justify-content:center;
+}
+
+.subheaderLine{
+	width:135px;
+	border-bottom:1px solid $pageGray;
+	border-color:$pageGray;
+	background-color: lighten($pageGray, 25%);
+}
+
+.mooseSubheader{
+	margin:5px 10px;
+	height:28px;
+	width:28px;
+}
+
+// H I S T O R Y 
+
+.history{
+	@include flex(column);
+	align-items:center;
+	justify-content:center;
+	padding-top:70px;
+}
+
+.historyImage{
+	background-image: url('../src/assets/second_header2.jpg');
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height:310px;
+	width:61%;
+	@include flex(column-reverse);
+}
+
+.whiteSpace{
+	width:690px;
+	height:45px;
+	background-color:white;
+	margin:0 auto;
+}
+
+.historyContent{
+	@include flex(column);
+	align-items:center;
+	height:145px;
+	width:690px;
+	box-shadow: -3px 3px 5px lightgray, 3px 3px 5px lightgray;
+	border-top:none;
+	overflow: hidden;
+	p{
+		font-family: $Droid;
+		color:rgb(149, 149, 149);
+		font-size:10px;
+		line-height: 15px;
+		width:90%;
+		margin:0 auto;
+		text-align: center;
+	}
+}
+
+button.directWork{
+	background-color:transparent;
+	border:1px solid black;
+	font-family:$Montserrat;
+	font-size:8px;
+	letter-spacing: 1px;
+	margin:20px auto 0 auto;
+	padding:10px 20px;
+}
+
+// S E R V I C E S 
+
+.services{
+	padding-bottom:130px;
+	padding-top:155px;
+}
+
+.services__container{
+	@include flex(row);
+	width:61%;
+	margin:0 auto;
+	text-align: center;
+	h4{
+		font-family: $Montserrat;
+		font-weight: lighter;
+		font-size: 13px;
+	}
+	p{
+		font-family: $Droid;
+		color: rgb(149, 149, 149);
+		font-size:10px;
+		margin:0;
+		line-height: 18px;
+	}
+	img{
+		height:28px;
+		width:28px;
+	}
+}
+
+img.cameraIcon{
+	height:24px;
+	width:27px;
+}
+
+.webPhoto, .creativeDev, .marketingBranding{
+	@include flex(column);
+	width:33.33%;
+}
+
+.webPhoto, .creativeDev{
+	border-right:1.5px solid $pageGray;
+}
+
+.web, .creative, .marketing{
+	border-bottom:1.5px solid $pageGray;
+	padding:0 20px 50px 20px;
+}
+
+.photography, .development, .branding{
+	padding:50px 20px 0 20px;
+}
+
+// P O R T F O L I O 
+
+.overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	visibility: hidden;
+	color:white;
+	text-align:center;
+	h5{
+		font-family: $Montserrat;
+		font-weight: lighter;
+		margin-bottom:3px;
+	}
+	p{
+		margin:0;
+		font-family: $Droid;
+		font-size: 9px;
+		font-weight: lighter;
+	}
+}
+
+.portfolioContainer{
+	@include flex(row);
+	width:61%;
+	height:610px;
+	margin:0 auto;
+	justify-content:space-between;
+	box-sizing: border-box;
+	img{
+		width:245px;
+	}
+}
+
+.firstCol, .secondCol, .thirdCol{
+	@include flex(column);
+	width:245px;
+	justify-content:space-between;
+	box-sizing: border-box;
+}
+
+.deerOne, .manForest{
+	height:185px;
+	position:relative;
+	width:245px;
+	img{
+		height:100%;
+	}
+	&:hover .overlay{
+		visibility: visible;
+	}
+}
+
+.forestOne, .babyDeer{
+	height:400px;
+	position:relative;
+	width:245px;
+	img{
+		height:100%;
+	}
+	&:hover .overlay{
+		visibility: visible;
+	}
+}
+
+.deerTwo, .deerThree, .mooseOne{
+	height:185px;
+	position:relative;
+	width:245px;
+	img{
+		height:100%;
+	}
+	&:hover .overlay{
+		visibility: visible;
+	}
+}
+
 
 
