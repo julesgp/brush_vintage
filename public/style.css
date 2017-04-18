@@ -521,7 +521,7 @@ img.cameraIcon {
   .colOne p {
     font-family: "Droid Serif", serif;
     color: #959595;
-    font-size: 9px;
+    font-size: 10.5px;
     margin: 0;
     line-height: 18px; }
 
@@ -567,6 +567,10 @@ img.cameraIcon {
 .date {
   margin: 5px 0 !important; }
 
+.newsletter {
+  background-color: #f7f7f7;
+  padding: 50px 0; }
+
 .newsletterContainer {
   width: 61%;
   display: -ms-flexbox;
@@ -582,7 +586,7 @@ img.cameraIcon {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  width: 50%; }
+  width: 52%; }
   .newsletterInfo h3 {
     margin: 0;
     font-family: "Montserrat", sans-serif;
@@ -596,4 +600,112 @@ img.cameraIcon {
     margin-top: 10px; }
 
 .newsletterInput {
-  width: 50%; }
+  width: 48%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .newsletterInput input {
+    width: 75%;
+    padding-left: 10px;
+    font-family: "Droid Serif", serif;
+    font-size: 9px;
+    color: #959595;
+    box-sizing: border-box;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid rgba(208, 208, 208, 0.3); }
+  .newsletterInput button {
+    width: 20%;
+    height: 30px;
+    background-color: #262626;
+    border: 1px solid #262626;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 9px; }
+
+footer {
+  background-color: #262626;
+  color: gray; }
+
+.topFooter {
+  width: 61%;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  font-size: 9px;
+  padding: 60px 0; }
+  .topFooter h3 {
+    color: white;
+    font-size: 13px;
+    letter-spacing: 2.5px;
+    font-weight: normal;
+    margin-bottom: 30px; }
+  .topFooter ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+
+.brush, .items, .footerServices, .office {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 20%; }
+  .brush li, .items li, .footerServices li, .office li {
+    margin-bottom: 7px; }
+
+.brush img {
+  height: 50px;
+  width: 80px; }
+
+.brush p {
+  line-height: 15px; }
+
+.socialMedia i {
+  font-size: 15px;
+  margin-right: 10px; }
+  .socialMedia i:hover {
+    color: white; }
+
+.items {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .items h3 {
+    width: 100%; }
+  .items p {
+    margin: 0 0 5px 0;
+    border: 1px solid #676767;
+    padding: 5px; }
+    .items p:hover {
+      color: white;
+      border: 1px solid white; }
+
+.bottomFooter {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: black;
+  height: 50px;
+  border-top: 1px solid rgba(208, 208, 208, 0.3); }
+  .bottomFooter p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px; }

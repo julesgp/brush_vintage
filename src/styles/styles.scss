@@ -432,7 +432,7 @@ img.cameraIcon{
 	p{
 		font-family: $Droid;
 		color: rgb(149, 149, 149);
-		font-size:9px;
+		font-size:10.5px;
 		margin:0;
 		line-height: 18px;
 	}
@@ -483,6 +483,11 @@ img.cameraIcon{
 
 // N E W S L E T T E R
 
+.newsletter{
+	background-color:rgb(247, 247, 247);
+	padding:50px 0;
+}
+
 .newsletterContainer{
 	width:61%;
 	@include flex(row);
@@ -492,7 +497,7 @@ img.cameraIcon{
 
 .newsletterInfo{
 	@include flex(column);
-	width:50%;
+	width:52%;
 	h3{
 		margin:0;
 		font-family: $Montserrat;
@@ -509,8 +514,117 @@ img.cameraIcon{
 }
 
 .newsletterInput{
-	width:50%;
+	width:48%;
+	@include flex(row);
+	justify-content:space-between;
+	input{
+		width:75%;
+		padding-left:10px;
+		font-family: $Droid;
+		font-size:9px;
+		color: rgb(149, 149, 149);
+		box-sizing:border-box;
+		height:30px;
+		background-color: transparent;
+		border:1px solid $pageGray;
+	}
+	button{
+		width:20%;
+		height:30px;
+		background-color:rgb(38, 38, 38);
+		border:1px solid rgb(38, 38, 38);
+		color:white;
+		font-family: $Montserrat;
+		font-size:9px;
+	}
 }
 
+// F O O T E R 
+
+footer{
+	background-color:rgb(38,38,38);
+	color:gray;
+}
+
+.topFooter{
+	width:61%;
+	margin:0 auto;
+	@include flex(row);
+	justify-content:space-between;
+	font-family:$Montserrat;
+	font-size:9px;
+	padding:60px 0;
+	h3{
+		color:white;
+		font-size:13px;
+		letter-spacing: 2.5px;
+		font-weight: normal;
+		margin-bottom:30px;
+	}
+	ul{
+		list-style: none;
+		padding:0;
+		margin:0;
+	}
+}
+
+.brush, .items, .footerServices, .office{
+	@include flex(column);
+	width:20%;
+	li{
+		margin-bottom:7px;
+	}
+}
+
+.brush{
+	img{
+		height:50px;
+		width:80px;
+	}
+	p{
+		line-height: 15px;
+	}
+}
+
+.socialMedia{
+	i{
+		font-size: 15px;
+		margin-right:10px;
+		&:hover{
+			color:white;
+		}
+	}
+}
+
+.items{
+	@include flex(row);
+	flex-wrap:wrap;
+	justify-content:space-between;
+	h3{
+		width:100%;
+	}
+	p{
+		margin:0 0 5px 0;
+		border:1px solid darken(gray, 10%);
+		padding:5px;
+		&:hover{
+			color:white;
+			border:1px solid white;
+		}
+	}
+}
+
+.bottomFooter{
+	@include flex(row);
+	align-items:center;
+	justify-content:center;
+	background-color:black;
+	height:50px;
+	border-top:1px solid $pageGray;
+	p{
+		font-family: $Montserrat;
+		font-size: 11px;
+	}
+}
 
 
